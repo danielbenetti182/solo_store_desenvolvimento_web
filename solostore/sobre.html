@@ -8,8 +8,8 @@
     
 </head>
 <body style="margin: 0px; background-color: white; height: auto;">
-<header style="position: fixed; top: 0; left: 0; width: 100%; color: white; padding: 0px;">
-    <!--Lugares do site a implementar-->
+
+<header>
     <nav style="display: flex; align-items: center; 
                 justify-content: space-between; 
                 width: 100%; position: fixed; 
@@ -19,7 +19,7 @@
             <img src="img/Logo_HTransparente.png" alt="Logo_Home" style="width: 200px; height: 90px; object-fit: contain;"></a>
         <div style="text-align: center; color: black; font-family: Arial black">
             <a href="index.html">Ofertas</a> 
-            <a href="produtoBranco.html">Produto</a> 
+            <a href="produto.html">Produto</a> 
             <a href="sobre.html">Sobre</a> 
         </div>
         <!--A implementar futuramente-->
@@ -32,63 +32,69 @@
             <img src="img/icones_menu/carrinho.png" alt="Carrinho" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
         </div>
     </nav>
+        
 </header>
     
     
-    <main style="padding-top: 94px;">
+<main>
+
+    <div>
+        <h1 style="text-align: center;">Bem-Vindo a SoloStore.</h1>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; font-size: 35px; background-color: rgba(128, 128, 128, 0.082);
+        border: 25px; border: color black; margin-left: 0%; border: 100%; border-color: black; padding: 25px;">
+        <img width="700px" height="500px" style="text-align: left; margin-left: 25px;" src="img/imagemsobre2.jpg" alt="">
 
         <div>
-                <h1 style="text-align: center;">Bem-Vindo a SoloStore.</h1>
+            <h2 style="margin-left: 450px; font-size: 45px;">Quem somos nós?</h2>
+            <br>
+            <p style="text-align: center;">
+                &nbsp;<!-- A SoloStore nasceu como um projeto acadêmico inovador, desenvolvido por três estudantes do curso
+                 de Análise e Desenvolvimento de Sistemas (ADS) da Fatec Santana de Parnaíba. Concebida inicialmente como o
+                  Trabalho de Conclusão de Curso (TCC) do grupo, a plataforma une o aprendizado prático em tecnologia à resolução
+                   de demandas reais do mercado. -->
+                A SoloStore é uma plataforma de comércio eletrônico idealizada e desenvolvida por três estudantes de Análise
+                e Desenvolvimento de Sistemas da Fatec Santana de Parnaíba. O projeto, que consolida a trajetória acadêmica
+                do grupo no Trabalho de Conclusão de Curso (TCC), foi desenhado para oferecer uma experiência de compra online
+                moderna e eficiente.
+            </p>
+            <p style="text-align: center;">
+                O projeto foi idealizado e executado pelos alunos:&nbsp;
+                <strong>Daniel Felippe Dela Beta Benetti, Denilson Nagera Salazar e Caio Sousa Da Silva.</strong>
+            </p>
         </div>
+        
 
-        <div style="display: flex; justify-content: space-between; font-size: 35px; background-color: rgba(128, 128, 128, 0.082); border: 25px; border: color black; margin-left: 0%; border: 100%; border-color: black; padding: 25px;">
-            <img width="700px" height="500px" style="text-align: left; margin-left: 25px;" src="img/imagemsobre2.jpg" alt="">
+    
+    </div>
 
-           <div>
-                <h2 style="margin-left: 450px; font-size: 45px;">Quem somos nós?</h2>
+    <div style="display: flex; justify-content: space-between; background-color: rgba(128, 128, 128, 0.082); align-items: center;
+    padding: 25px;">
+            <div>
+                <h2 style="margin-left: 220px; font-size: 45px;">Por que escolher a SoloStore?</h2>
                 <br>
-                <p style="text-align: center;">
-                    &nbsp;<!-- A SoloStore nasceu como um projeto acadêmico inovador, desenvolvido por três estudantes do curso de Análise e Desenvolvimento de Sistemas (ADS) da Fatec Santana de Parnaíba. Concebida inicialmente como o Trabalho de Conclusão de Curso (TCC) do grupo, a plataforma une o aprendizado prático em tecnologia à resolução de demandas reais do mercado. -->
-                    A SoloStore é uma plataforma de comércio eletrônico idealizada e desenvolvida por três estudantes de Análise e Desenvolvimento de Sistemas da Fatec Santana de Parnaíba. O projeto, que consolida a trajetória acadêmica do grupo no Trabalho de Conclusão de Curso (TCC), foi desenhado para oferecer uma experiência de compra online moderna e eficiente.
+                <p style="text-align: center; font-size: 35px;">Na SoloStore, oferecemos soluções completas para negócios
+                    de pequeno porte, com o propósito de impulsionar o pequeno empreendedor. Nossa missão é simplificar
+                    o ambiente digital através da criação de lojas virtuais modernas, gestão de estoque e automação de vendas.
+                    Entregamos o melhor custo-benefício do mercado para que você tenha a praticidade de vender sem sair de casa,
+                    controlando todo o seu negócio na palma da mão e fazendo com que mais pessoas da sua região conheçam e comprem
+                    os seus produtos.
                 </p>
-                <p style="text-align: center;">
-                    O projeto foi idealizado e executado pelos alunos:&nbsp;
-                    <strong>Daniel Felippe Dela Beta Benetti, Denilson Nagera Salazar e Caio Sousa Da Silva.</strong>
-                </p>
-           </div>
-            
+            </div>
 
-        </div>
-        \
-        <h2 style="text-align: center; font-family: Arial black">Fale Conosco</h2>
-        <form action="sobre.html" method="get" style="text-align: center; font-family: Arial medium">
-            <small >Nome</small>
-            <br>
-            <input type="text" size="60" placeholder="Nome completo" style="text-align: center;" required>
-            <br>
-            <small>Celular</small>
-            <br>
-            <input type="tel" size="60" placeholder="(xx) xxxxx-xxxx" style="text-align: center;" required>
-            <br>
-            <small>E-mail</small>
-            <br>
-            <input type="email" size="60" placeholder="email@email.com" style="text-align: center;" required>
-            <br>
-            <small>Mensagem</small>
-            <br>
-            <textarea cols="60" rows="10" required></textarea>
-            <br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </form>
+            <div style="margin-right: 25px; margin-left: 30px;">
+                <img width="700px" height="500px" style="text-align: right; margin-top: 0%;" src="img/imagem_sobre3.jpg" alt="">
+            </div>
+    </div>
+        
+    <a href="index.html"><p style="text-align: center; font-size: 20px;">Voltar ao ínicio</p></a>
+</main>
 
-
-        <a href="index.html"><p style="text-align: center; font-size: 20px;">Voltar ao ínicio</p></a>
-    </main>
-    <footer>
+<footer>
     <nav style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
         <!--Voltando para o sobre -->
-        <div">
+        <div>
 
         </div>
         <!--Redes sociais e apps-->
@@ -97,9 +103,10 @@
         </div>
     </nav>
     <div style="text-align: center; font-family: Arial medium">
-    <h3>SoloStore Ltda</h3>
-    <h4>2026</h4>
+        <h3>SoloStore Ltda</h3>
+        <h4>2026</h4>
     </div>
 </footer>
+
 </body>
 </html>
