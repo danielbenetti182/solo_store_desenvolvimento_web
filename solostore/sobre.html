@@ -7,14 +7,35 @@
     <link rel="shortcut icon" href="Imagens/Favicon_Transparente.png" type="image/x-icon">
     
 </head>
-<body style="margin: 0%;">
-    <header>
-        
-        
-    </header>
+<body style="margin: 0px; background-color: white; height: auto;">
+<header style="position: fixed; top: 0; left: 0; width: 100%; color: white; padding: 0px;">
+    <!--Lugares do site a implementar-->
+    <nav style="display: flex; align-items: center; 
+                justify-content: space-between; 
+                width: 100%; position: fixed; 
+                background-color: white; margin-top: 0;"><!--sempre que quiser dispor as divs utilizar display: flex-->
+         <!--Logo a esquerda que leva para home-->
+            <a href="index.html">
+            <img src="img/Logo_HTransparente.png" alt="Logo_Home" style="width: 200px; height: 90px; object-fit: contain;"></a>
+        <div style="text-align: center; color: black; font-family: Arial black">
+            <a href="index.html">Ofertas</a> 
+            <a href="produtoBranco.html">Produto</a> 
+            <a href="sobre.html">Sobre</a> 
+        </div>
+        <!--A implementar futuramente-->
+        <div style="text-align: center;">
+            <a href="busca.html">
+            <img src="img/icones_menu/buscar.png" alt="Buscar" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
+            <a href="favoritos.html">
+            <img src="img/icones_menu/favorito.png" alt="Favoritos" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
+            <a href="carrinho.html">
+            <img src="img/icones_menu/carrinho.png" alt="Carrinho" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
+        </div>
+    </nav>
+</header>
     
     
-    <main>
+    <main style="padding-top: 94px;">
 
         <div>
                 <h1 style="text-align: center;">Bem-Vindo a SoloStore.</h1>
@@ -38,12 +59,47 @@
             
 
         </div>
-        
+        \
+        <h2 style="text-align: center; font-family: Arial black">Fale Conosco</h2>
+        <form action="sobre.html" method="get" style="text-align: center; font-family: Arial medium">
+            <small >Nome</small>
+            <br>
+            <input type="text" size="60" placeholder="Nome completo" style="text-align: center;" required>
+            <br>
+            <small>Celular</small>
+            <br>
+            <input type="tel" size="60" placeholder="(xx) xxxxx-xxxx" style="text-align: center;" required>
+            <br>
+            <small>E-mail</small>
+            <br>
+            <input type="email" size="60" placeholder="email@email.com" style="text-align: center;" required>
+            <br>
+            <small>Mensagem</small>
+            <br>
+            <textarea cols="60" rows="10" required></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+
+
         <a href="index.html"><p style="text-align: center; font-size: 20px;">Voltar ao ínicio</p></a>
     </main>
     <footer>
+    <nav style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!--Voltando para o sobre -->
+        <div">
 
-    </footer>
+        </div>
+        <!--Redes sociais e apps-->
+        <div>
 
+        </div>
+    </nav>
+    <div style="text-align: center; font-family: Arial medium">
+    <h3>SoloStore Ltda</h3>
+    <h4>2026</h4>
+    </div>
+</footer>
 </body>
 </html>
