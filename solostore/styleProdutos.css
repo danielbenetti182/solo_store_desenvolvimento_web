@@ -31,7 +31,14 @@ footer
     border-top: 1px solid #eee;
 }
 
-#icones_menu
+#logo
+{
+    width: 200px;
+    height: 90px;
+    object-fit: contain;
+}
+
+#nav_menu
 {
     display: flex;
     align-items: center;
@@ -41,6 +48,22 @@ footer
     margin-top: 0;
     box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1)
 }
+
+.menu
+{
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 72px;
+}
+
+.menu a
+{
+    text-decoration: none; color: black;
+}
+
+
 
 .Desconto {
     color: #DC143C;
@@ -92,9 +115,10 @@ footer
     margin-top: 20px;
 }
 
-#icones_menu:hover
+.menu a:hover
 {
     color: #252525;
+    text-decoration-line: underline;
 }
 
 .tabela td:hover 
