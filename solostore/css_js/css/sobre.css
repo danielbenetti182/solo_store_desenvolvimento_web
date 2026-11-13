@@ -1,0 +1,187 @@
+/*HEADER GLOBAL*/
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+}
+ 
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+#icones{
+    margin-right: 22px;
+}
+
+#nav_footer{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
+}
+ 
+#img_logo{
+    width: 200px;
+    height: 90px;
+    object-fit: contain;
+}
+ 
+#menu{
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 72px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+#menu a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+ 
+.img_logo{
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    padding: 5px;
+}
+ 
+ 
+ 
+/*CSS da Página SOBRE*/
+/*BODY do Sobre*/
+body{
+    margin: 0;
+    background-color: white;
+    height: auto;
+}
+ 
+main{
+    padding-top: 94px;
+}
+ 
+h1{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+p{
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+footer{
+    text-align: center;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #eee;
+}
+
+#img_esquerda{
+    width: 700px;
+    height: 510px;
+    text-align: left;
+    margin-left: 25px;
+    border-radius: 10%;
+}
+
+.imagem_direita{
+    width: 700px;
+    height: 510px;
+    text-align: right;
+    margin-left: 25px;
+    border-radius: 10%;
+}
+
+.conteudo_direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.conteudo_esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    padding: 25px;
+    margin-left: 22px;
+}
+ 
+#primeiro_conteudo{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 105px; 
+    margin-left: 15px;
+    margin-top: 55px;
+}
+
+#segundo_conteudo{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 105px; 
+    margin-left: 15px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+#contato{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#form{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#form input{
+    text-align: center;
+}
+
+#voltar{
+    display: block;
+    font-size: 21px;
+    width: fit-content;
+    margin: 35px auto 0 auto;
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    font-family: Arial, sans-serif;
+}
+
+#voltar:hover{
+    text-decoration: underline;
+}
