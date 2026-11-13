@@ -1,12 +1,10 @@
-body
-{
+body {
     margin: 0;
     background-color: white;
     height: auto;
 }
 
-header
-{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,14 +14,12 @@ header
     z-index: 1000;
 }
 
-main
-{
-    padding-top: 110px;
+main {
+    padding-top: 130px;
     font-family: Arial, sans-serif;
-} 
+}
 
-footer
-{
+footer {
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: 50px;
@@ -31,26 +27,23 @@ footer
     border-top: 1px solid #eee;
 }
 
-#logo
-{
+#logo {
     width: 200px;
     height: 90px;
     object-fit: contain;
 }
 
-#nav_menu
-{
+#nav_menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     background-color: white;
     margin-top: 0;
-    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1)
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1);
 }
 
-.menu
-{
+.menu {
     text-align: center;
     color: black;
     font-family: Arial, sans-serif;
@@ -58,24 +51,70 @@ footer
     margin-right: 72px;
 }
 
-.menu a
-{
-    text-decoration: none; color: black;
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
 }
 
+.menu a:hover {
+    color: #555;
+    text-decoration: underline;
+}
 
+#div_icons_direita a {
+    text-align: center;
+    padding-right: 5px;
+    text-decoration: none;
+}
 
-.Desconto {
+.icons_direita {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+#categoria {
+    margin-left: 200px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#detalhes_produto h2 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#detalhes_produto h3 span s {
+    color: #B0C4DE;
+}
+
+.parcelas {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+}
+
+.Desconto_badge {
+    color: #DC143C;
+}
+
+.Desconto_box {
     color: #DC143C;
     font-weight: normal;
     margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px dashed #DC143C;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 400px;
 }
 
 .div_centralizador {
     text-align: left;
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
 }
 
 .img_produtos1 {
@@ -83,6 +122,7 @@ footer
     height: auto;
     margin-left: 200px;
     margin-right: 15px;
+    margin-bottom: 25px;
 }
 
 .img_produtos2 {
@@ -92,42 +132,84 @@ footer
     margin-right: 50px;
 }
 
-.tabela td {
+#cor_modelo {
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.modelo_link img {
+    width: 80px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    transition: transform 0.2s;
+}
+
+.modelo_link a{
+    text-decoration: none;
+}
+
+
+.modelo_link:hover img {
+    transform: scale(1.05);
+}
+
+.modelo_link.ativo img {
+    border: solid 2px black;
+}
+
+.secao_tamanho {
+    margin-left: 15px;
+}
+
+.tabela {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #111111;
+    margin: 20px 0;
+}
+
+.tabela tbody td {
     width: 25%;
     border: 1px solid #111111;
     border-radius: 4px;
     text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
+    padding: 15px 0;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    background-color: #ffffff;
+    transition: all 0.2s;
 }
 
-#adicionar_ao_carrinho
-{
-    align-items: center;
-    color: aliceblue;
+.tabela td:hover {
     background-color: #111111;
-    border-radius: 10px; cursor: pointer;
-    width: 300px; height: 70px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.menu a:hover
-{
-    color: #252525;
-    text-decoration-line: underline;
-}
-
-.tabela td:hover 
-{
-    background-color: #252525;
     color: #ffffff;
 }
 
-#adicionar_ao_carrinho:hover
-{
+#adicionar_ao_carrinho {
+    align-items: center;
+    color: aliceblue;
+    background-color: #111111;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    transition: background-color 0.2s;
+}
+
+#adicionar_ao_carrinho h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#adicionar_ao_carrinho:hover {
     background-color: #252525;
 }
