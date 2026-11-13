@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    background-color: white;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 0;
+    z-index: 1000;
+}
+
+main {
+    padding-top: 130px;
+    font-family: Arial, sans-serif;
+}
+
+footer 
+{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+#logo {
+    width: 200px;
+    height: 90px;
+    object-fit: contain;
+}
+
+#nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+.menu {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 72px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+#div_icons_direita a {
+    text-align: center;
+    padding-right: 5px;
+    text-decoration: none;
+
+}
+
+.icons_direita {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+
+#accordion_index
+{
+    width: 300px; height: 300px;
+}
+
+
+.titulo_texto
+{
+    text-align: center;
+    position: relative;
+    text-transform: uppercase; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* caixa de texto inicial */
+
+#div_caixas
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    margin: 0;         
+}
+#div_caixa_direita
+{
+    background: #000000; 
+    color: #fff; 
+    height: 200px; 
+    border-radius: 12px 0px 0px 12px;
+    margin-right: 0; 
+    flex: 1;
+    display: flex;
+    align-items: center;
+} 
+#div_caixa_esquerda
+{
+    background: #000000; 
+    color: #fff; 
+    height: 200px; 
+    border-radius: 0px 12px 12px 0px;
+    margin-left: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}  
+.texto_caixa_direita
+{
+    padding: 15px;  color: #feffff;
+    border-top: none;
+    margin-top: -2px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+
+.texto_caixa_esquerda
+{
+    padding: 15px;  color: #feffff;
+    border-top: none;
+    margin-top: -2px;
+    text-align: left;
+    display: flex;
+    margin-left: 0px;
+    align-items: center;
+    line-height: 1.5;
+}
+#div_caixa_esquerda:hover
+{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    transition: 0.3s;
+}
+#div_caixa_direita:hover 
+{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    transition: 0.3s;
+}
+#div_caixa_esquerda:hover p
+{
+    color: #0e0d0d;
+}
+#div_caixa_direita:hover p
+{
+    color: #0e0d0d;
+}
+
+/* video e chamada de orçamento */
+
+#div_video
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    width: 100%;
+    margin: 0;  
+    padding-bottom: 20px;       
+}
+
+#div_imagem
+{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    padding: 0 20px;      
+}
+
+#carouselExampleAutoplaying
+{
+    width: 100%;
+    max-width: 800px; 
+    border-radius: 12px;
+    overflow: hidden; 
+}
+
+#carouselExampleAutoplaying .carousel-item img
+{
+    height: 450px;     
+    object-fit: cover; 
+}
+/* faq */
+
+.accordion {
+  --bs-accordion-btn-bg: #000000 !important;
+  --bs-accordion-btn-color: #f8f9fa !important;
+  --bs-accordion-active-bg: #000000 !important;
+  --bs-accordion-active-color: #ffffff !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+  --bs-accordion-border-color: #000000 !important;
+}
+
+.accordion-button.collapsed::after 
+{
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed)::after 
+{
+    filter: brightness(0) invert(1);
+}
+
+#accordionPanelsStayOpenExample {
+    width: 90%;          
+    max-width: 800px;    
+    margin: 20px auto;   
+    border-radius: 12px; 
+    overflow: hidden;    
+}
+
+.botao
+{
+    text-decoration: none; color: black;
+}

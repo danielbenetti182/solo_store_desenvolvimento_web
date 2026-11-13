@@ -4,78 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoloStore Home</title>
+    <link rel="stylesheet" href="css_js/bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css_js/bootstrap/bootstrap-5.3.8-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="css_js/css/styleIndex.css">
 </head>
 
 <body style="margin: 0px; background-color: white; height: auto;">
-<header style="position: fixed; top: 0; left: 0; width: 100%; color: white; padding: 0px;">
-    <!--Lugares do site a implementar-->
-    <nav style="display: flex; align-items: center; 
-                justify-content: space-between; 
-                width: 100%; position: fixed; 
-                background-color: white; margin-top: 0;"><!--sempre que quiser dispor as divs utilizar display: flex-->
-         <!--Logo a esquerda que leva para home-->
+    <header>
+        <nav id="nav_menu">
+            <!-- Logo à esquerda -->
             <a href="index.html">
-            <img src="img/Logo_HTransparente.png" alt="Logo_Home" style="width: 200px; height: 90px; object-fit: contain;"></a>
-        <div style="text-align: center; color: black; font-family: Arial black; margin-right: 72px;">
-            <a href="index.html">Ofertas</a>&nbsp;&nbsp;
-            <a href="produtoBranco.html">Produto</a>&nbsp;&nbsp;
-            <a href="sobre.html">Sobre</a> 
-        </div>
-        <!--A implementar futuramente-->
-        <div style="text-align: center;">
-            <a href="busca.html">
-            <img src="img/icones_menu/buscar.png" alt="Buscar" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
-            <a href="favoritos.html">
-            <img src="img/icones_menu/favorito.png" alt="Favoritos" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
-            <a href="carrinho.html">
-            <img src="img/icones_menu/carrinho.png" alt="Carrinho" style="width: 33px; height: 33px; object-fit: contain; padding: 5px;"></a>
-        </div>
-    </nav>
-</header>
+                <img src="img/Logo_HTransparente.png" id="logo" alt="Logo Home">
+            </a>
+            
+            <div class="menu">
+                <a href="index.html">Ofertas</a>&nbsp;&nbsp;
+                <a href="produtoBranco.html">Produto</a>&nbsp;&nbsp;
+                <a href="sobre.html">Sobre</a>
+            </div>
+            
+            <!-- Ícones à direita -->
+            <div id="div_icons_direita">
+                <a href="busca.html">
+                    <img src="img/icones_menu/buscar.png" alt="Buscar" class="icons_direita">
+                </a>
+                <a href="favoritos.html">
+                    <img src="img/icones_menu/favorito.png" alt="Favoritos" class="icons_direita">
+                </a>
+                <a href="carrinho.html">
+                    <img src="img/icones_menu/carrinho.png" alt="Carrinho" class="icons_direita">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-<main style="padding-top: 94px;">
-    <h1 style="text-align: center; color: black; font-family: Arial black">SOLOSTORE - PROJETO INTEGRADOR</h1>
-    <nav style="text-align: center;color: black; font-family: Arial medium">
-    <p>e-commerce modelo para o projeto integrador Solostore, página inicial com elementos retirados do site da NIKE, apenas para fins de exemplo, não havendo nenhuma relação ou utilização comercial destes elementos fora do ambito academico</p>
-    </nav>
-    <nav style="display: flex; align-items: safe ;width: 100%;">
-        <a href="produtoBranco.html">
-         <img src="img/BLOCO_1_ROUPA_ACADEMIA_ESQUERDA.jpg" alt="academia">   
-        </a>
-         <a href="produtoBranco.html">
-         <img src="img/BLOCO_1_ROUPA_DIREITA.jpg" alt="academia">   
-        </a>        
-    </nav>
-    <nav style="display: flex; align-items: center; justify-content: space-between; margin-left: 30px;margin-right: 30px;">
-        <a href="produtoBranco.html">
-            <img src="img/BLOCO_2_ESQUERDA.avif" alt="academia">   
-        </a>
-        <a href="produtoBranco.html">
-            <img src="img/BLOCO_2_MEIO.jpg" alt="academia">   
-        </a>
-        <a href="produtoBranco.html">
-            <img src="img/BLOCO_2_DIREITA.JPEG" alt="produto">   
-        </a>   
-    </nav>
+<main id="main">
+    <h1 class="titulo_texto">Tenha seu e-commerce sem dificuldades</h1>
+<div id="div_caixas">
+  <div id="div_caixa_esquerda" class="div_caixas">
+    <p class="texto_caixa_esquerda">Liberte-se das taxas abusivas e da guerra de preços dos marketplaces. Com a SoloStore, você não paga comissões por venda e mantém o lucro integral do seu trabalho.</p>
+  </div>
+  <div id="div_caixa_direita" class="div_caixas">
+    <p class="texto_caixa_direita">Tenha um canal de vendas com a cara da sua marca. Gerencie produtos à pronta entrega e orçamentos sob medida em uma única plataforma, fidelizando seus clientes sem intermediários.</p>
+  </div>
+</div>
+
+    <h1 class="titulo_texto">Veja como é fácil transformar o seu negócio.</h1>
+    <h4 class="titulo_texto">Assista ao vídeo abaixo e descubra como a SoloStore lhe ajuda vender mais, sem taxas abusivas e com a identidade da sua marca.</h4>
+    
+<!-- Imagens de esboço e vídeo -->
+
+    <div id = div_video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/na47wMFfQCo?si=H_cZxXH8JqfM-Nde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>  
+    <a href="sobre.html" class="botao">
+      <div class="d-grid gap-3 col-2 mx-auto">
+        <button type="button" class="btn btn-dark btn-lg">FAÇA JÁ SEU ORÇAMENTO</button>
+      </div>  
+    </a>
+    <h1 class="titulo_texto">Nossos projetos</h1>
+
+
+<div id="div_imagem">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/placeholder-image.png"  class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/placeholder-image.png"  class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/placeholder-image.png"  class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<H1 class="titulo_texto">faq</H1>
+
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        O que é a SoloStore e para quem ela foi criada?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        A SoloStore é uma plataforma de e-commerce e orçamentos desenvolvida sob medida. Ela foi criada especialmente para varejistas e artesãos que desejam conquistar independência tecnológica, fugindo da guerra de preços e das altas taxas cobradas por grandes marketplaces.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        A plataforma cobra alguma taxa de comissão por venda?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>Não.</strong> O sistema não retém nenhuma porcentagem sobre o valor das vendas processadas. O valor integral da compra é repassado diretamente para a conta do lojista, sendo descontadas apenas as taxas padrão do Gateway de pagamento bancário.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        A loja terá a "cara" da minha marca?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>Com certeza!</strong> A vitrine virtual é desenvolvida com a identidade visual exclusiva de cada cliente. Isso garante um canal de contato direto e exclusivo entre a sua marca e o consumidor final, facilitando a fidelização e eliminando a interferência visual de concorrentes.
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  
+
+<!-- accordion FAQ -->
+
+
+<!-- BOTÃO 2 -->
+
+
+ <h1 class="titulo_texto">Entre em contato e faça já seu orçamento</h1>
+
+ <a href="sobre.html" class="botao">
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-dark btn-lg">Whatsapp</button>
+  </div>
+ </a>
+ <h2 class="titulo_texto">Ou digite seus dados para receber uma prévia</h2>
+     <form action="sobre.html" method="get" style="text-align: center; font-family: Arial medium">
+            <small >Nome</small>
+            <br>
+            <input type="text" size="60" placeholder="Nome completo" style="text-align: center;" required>
+            <br>
+            <small>Celular</small>
+            <br>
+            <input type="tel" size="60" placeholder="(xx) xxxxx-xxxx" style="text-align: center;" required>
+            <br>
+            <small>E-mail</small>
+            <br>
+            <input type="email" size="60" placeholder="email@email.com" style="text-align: center;" required>
+            <br>
+            <small>Mensagem</small>
+            <br>
+            <textarea cols="60" rows="10" required></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
     
 </main>
     
-<footer>
-    <nav style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-        <!--Voltando para o sobre -->
-        <div">
-
-        </div>
-        <!--Redes sociais e apps-->
+  <footer>
         <div>
-
+            <h3>SoloStore Ltda</h3>
+            <h4>2026</h4>
         </div>
-    </nav>
-    <div style="text-align: center; font-family: Arial medium">
-    <h3>SoloStore Ltda</h3>
-    <h4>2026</h4>
-    </div>
-</footer>
+  </footer>
+<script src="css_js/bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
