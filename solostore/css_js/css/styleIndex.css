@@ -1,12 +1,10 @@
-body
-{
+body {
     margin: 0;
     background-color: white;
-    padding: 0;
+    height: auto;
 }
 
-header
-{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,13 +14,12 @@ header
     z-index: 1000;
 }
 
-main
-{
-    padding-top: 110px;
+main {
+    padding-top: 130px;
     font-family: Arial, sans-serif;
-} 
+}
 
-footer
+footer 
 {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -31,26 +28,23 @@ footer
     border-top: 1px solid #eee;
 }
 
-#logo
-{
+#logo {
     width: 200px;
     height: 90px;
     object-fit: contain;
 }
 
-#nav_menu
-{
+#nav_menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     background-color: white;
     margin-top: 0;
-    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1)
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.1);
 }
 
-.menu
-{
+.menu {
     text-align: center;
     color: black;
     font-family: Arial, sans-serif;
@@ -58,10 +52,31 @@ footer
     margin-right: 72px;
 }
 
-.menu a
-{
-    text-decoration: none; color: black;
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
 }
+
+.menu a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+#div_icons_direita a {
+    text-align: center;
+    padding-right: 5px;
+    text-decoration: none;
+
+}
+
+.icons_direita {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    padding: 5px;
+}
+
 
 #accordion_index
 {
